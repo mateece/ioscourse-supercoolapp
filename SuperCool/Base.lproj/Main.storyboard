@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperCool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ogg-Fc-IG3">
+                                <rect key="frame" x="-174" y="-106" width="749" height="803"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nun-wi-rb1">
+                                <rect key="frame" x="80" y="317" width="221" height="28"/>
+                                <animations/>
+                                <state key="normal" title="Make me Super Cool!"/>
+                                <connections>
+                                    <action selector="MakeMeNotSoUnCool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8O6-nA-hdg"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Boom-App" translatesAutoresizingMaskIntoConstraints="NO" id="Hsh-n9-WgH">
+                                <rect key="frame" x="45" y="18" width="285" height="154"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="lel-JP-BAx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="CoolBg" destination="ogg-Fc-IG3" id="dAq-Yb-au6"/>
+                        <outlet property="CoolLogo" destination="Hsh-n9-WgH" id="1tt-Lr-EcE"/>
+                        <outlet property="UnCoolButton" destination="nun-wi-rb1" id="SIL-1Y-Dd9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269.5" y="204.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Boom-App" width="710" height="116"/>
+        <image name="background" width="1667" height="1667"/>
+    </resources>
+</document>
